@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.InputMismatchException;
+
+/* Fast tool for i/o Version 1 */
 class FasterScanner {
     private InputStream mIs;
     private byte[] buf = new byte[1024];
