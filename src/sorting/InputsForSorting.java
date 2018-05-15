@@ -15,6 +15,7 @@ public class InputsForSorting {
         writer.printLine("1)BubbleSort");
         writer.printLine("2)Selection Sort");
         writer.printLine("3)Insertion Sort");
+        writer.printLine("4)Merge Sort");
         try{
             int i=inputReader.readInt();
             long startTime;
@@ -32,6 +33,11 @@ public class InputsForSorting {
                         break;
                 case 3: startTime=System.currentTimeMillis();
                         printArray(InsertionSort.sort(inputs));
+                        endTime=System.currentTimeMillis();
+                        writer.printLine("Time Taken for Insertion Sort Algorithm is "+(endTime-startTime)+" ms");
+                        break;
+                case 4: startTime=System.currentTimeMillis();
+                        printArray(MergeSort.sort(inputs));
                         endTime=System.currentTimeMillis();
                         writer.printLine("Time Taken for Insertion Sort Algorithm is "+(endTime-startTime)+" ms");
                         break;
